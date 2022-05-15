@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de adivinhação!</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jogoAdivinhacao.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1> Bem vindo ao Jogo de Adivinhação.</h1>
+        </div>
+    </header>
+
+    <main>
+        <label for="chute">Digite um número:</label>
+        <input type="text" name="chuteDoJogador" id="chuteDoJogador">
+        <input type="submit" value="Enviar palpite" id="enviarPalpite" onclick="verificar()">
+        <div id="res">Resultado.</div>
+        </div>
+    </main>
+
+    <footer>
+        <h1>Aproveite o seu jogo!</h1>
+    </footer>
+</body>
+
+</html>
