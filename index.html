@@ -18,10 +18,11 @@
     </header>
 
     <main>
-        <label for="chute">Digite um número:</label>
-        <input type="text" name="chuteDoJogador" id="chuteDoJogador">
-        <input type="submit" value="Enviar palpite" id="enviarPalpite" onclick="verificar()">
-        <div id="res">Resultado.</div>
+        <div class="jogo">
+            <label for="chute" class="prints">Digite um número:</label>
+            <input type="number" name="chuteDoJogador" id="chuteDoJogador">
+            <input type="button" value="Enviar palpite" id="enviarPalpite" onclick="verificar()">
+            <div id="res" class="prints">Resultado.</div>
         </div>
     </main>
 

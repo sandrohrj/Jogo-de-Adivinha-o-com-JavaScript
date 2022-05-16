@@ -3,3 +3,23 @@ body {
     color: white;
     text-align: center;
 }
+
+.jogo {
+    padding: 20px;
+}
+
+.prints {
+    font-size: 30px;
+    padding: 20px;
+}
+
+#enviarPalpite {
+    padding: 5px;
+    margin: auto;
+}
+
+#chuteDoJogador {
+    margin: auto;
+    padding: 5px;
+}
+

@@ -1,14 +1,19 @@
-var numeroSecreto = 10
-var chuteDoJogador = Number(document.getElementById('chuteDoJogador'))
-var palpiteUsuario = Number(document.querySelector('enviarPalpite#value'))
+var numeroSecreto = Math.floor(Math.random()*100) +1
+var tentativas = 0
+// var contador = 10 - verificar onde inserir a quantidade.
 
 function verificar() {
+    
+    var chuteDoJogador = document.querySelector('#chuteDoJogador')
+    var res = document.querySelector('#res')
+    var chuteDoJogadorFinal = Number(chuteDoJogador.value)
+    var contador = Number(document.querySelector('#contador'))
 
-    if (palpiteUsuario === numeroSecreto) {
-        res.innerHTML = ("Você acertou, parabéns!")
-    } else if (palpiteUsuario < numeroSecreto) {
-        res.innerHTML = ("Seu palpite foi muito baixo!")
+    if (chuteDoJogadorFinal === numeroSecreto) {
+        res.innerHTML = `Você acertou! Seu palpite foi: ${chuteDoJogadorFinal}`
+    } else if (chuteDoJogadorFinal < numeroSecreto) {
+        res.innerHTML = `Seu palpite foi menor que o número secreto! Seu palpite foi: ${chuteDoJogadorFinal}`
     } else {
-        res.innerHTML = ("Seu palpite foi muito alto!")
+        res.innerHTML = `Seu palpite foi maior que o número secreto! Seu palpite foi: ${chuteDoJogadorFinal}`
     }
 }
